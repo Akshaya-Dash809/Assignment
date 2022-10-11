@@ -16,49 +16,34 @@ do not need to write this code and can be used directly from base class.
     String college="PJCMT";
 	String designation="Teacher";
 	public void work() {
-		
+		System.out.println("College :" +this.college+ "Designation : "+this.designation);
 	}
-	void display() {
-		System.out.println("Designation: " +designation+ " College: " +college );
-	}
+	
  }
 class ItTeacher extends Teacher{
-	public void work() {
-		System.out.println("Teach It ");
-	}
+	
 }
 class MathTeacher extends Teacher{
-	public void work() {
-		System.out.println("Teach Math ");
-	}
+	
 }
 class MusicTeacher extends Teacher{
-	public void work() {
-		System.out.println("Teach Music ");
-	}
+	
 }
 class PhysicsTeacher extends Teacher{
-	public void work() {
-		System.out.println("Teach Physics");
-	}
+	
 }
 
 public class TeacherMain {
 	
 	public static void main(String[] args) {
 		ItTeacher it = new ItTeacher(); 
-	    it.display();
 	    it.work();
 		MathTeacher mt =new MathTeacher();
-		mt.display();
 		mt.work();
 		MusicTeacher muc=new MusicTeacher();
-		muc.display();
 		muc.work();
 		PhysicsTeacher pt = new PhysicsTeacher();
-		pt.display();
 		pt.work();
 	}
-	
-
 }
+	
